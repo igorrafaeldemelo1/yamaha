@@ -1,38 +1,90 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.menu-bar{
+  position: fixed;
+  top: 0px;
+  width: 90%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 30px 100px;
+  justify-content: space-between;
+  height: 40px;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.seçao-all-button{
+  padding-top: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.seçoes-btn{
+  border: none;
+  padding: 15px 0px;
+  margin: 0px 20px;
+  padding-top: 0px;
+  background: rgba(255, 0, 0, 0);
+  color: rgb(237, 237, 237);
+  font-weight:700 ;
+  font-size:17px;
+
 }
+
+.seçoes-btn:hover{
+  border-bottom: solid 2px  rgb(22, 146, 217);
+  color: rgb(22, 146, 217);
+}
+
+.menu-end{
+  width: 15%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(236, 236, 236);
+}
+
+.perfil-btn{
+  display: flex;
+  justify-content: space-between;
+}
+
+.perfil-btn:hover ,.menu-icon:hover{
+  color: rgb(13, 121, 192);
+}
+
+
+.menu-icon{
+  height: 30px;
+  width: 30px;
+  padding-right: 22px;
+}
+
+.motos{
+  background-image: url('./Img/download.avif');
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+}
+
+
+.btn-compra-confimar{
+  width: 10%;
+  height: 40px;
+  background: rgba(158, 158, 158, 0.503);
+  position: relative;
+  top: 90%;
+  margin: auto;
+  border-radius: 20px;
+  padding: 5px;
+  display: flex;
+}
+
+.btn-icon{
+  width: 40px;
+  height: 40px;
+  background: rgb(233, 233, 233);
+  border-radius: 100%;
+}
+
+.btn-text{
+  color:white ;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
