@@ -1,14 +1,54 @@
 .menu-bar{
-  position: fixed;
-  top: 0px;
-  width: 90%;
+  margin: auto;
   display: flex;
-  padding: 30px 100px;
+  padding: 30px;
   justify-content: space-between;
   height: 40px;
-  
+  background: rgba(249, 249, 249, 0);
 }
-
+#menu-bar{
+  background: white;
+}
+.menu-top{
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 100%;
+}
+.banner-shop{
+  width: 100%;
+}
+.motos-barra-menu{
+  display: flex;
+  background: white;
+  justify-content: space-between;
+  padding: 30px ;
+  margin: auto;
+  width: 100%;
+}
+.title-model{
+  color: #181818;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.bar-menu{
+  height: 200px;
+  width: 1px;
+  background: #949494;
+}
+.seçao-menu{
+  display: block;
+  width: 50%;
+  text-align: center;
+}
+.name-model{
+  color: #686868;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.name-model:hover{
+  color: rgb(1, 53, 166);
+}
 .seçao-all-button{
   padding-top: 5px;
 }
@@ -19,15 +59,15 @@
   margin: 0px 20px;
   padding-top: 0px;
   background: rgba(255, 0, 0, 0);
-  color: rgb(237, 237, 237);
+  color: rgb(0, 0, 0);
   font-weight:700 ;
   font-size:17px;
 
 }
 
 .seçoes-btn:hover{
-  border-bottom: solid 2px  rgb(22, 146, 217);
-  color: rgb(22, 146, 217);
+  border-bottom: solid 2px  rgb(1, 53, 166);
+  color: rgb(1, 53, 166);
 }
 
 .menu-end{
@@ -36,23 +76,60 @@
   justify-content: space-between;
   font-size: 20px;
   font-weight: 500;
-  color: rgb(236, 236, 236);
 }
 
 .perfil-btn{
   display: flex;
   justify-content: space-between;
 }
-
-.perfil-btn:hover ,.menu-icon:hover{
-  color: rgb(13, 121, 192);
+.bar-serviços{
+  width: 1px;
+  height: 20px;
+  background: #949494;
 }
-
-
+.perfil-btn:hover ,.menu-icon:hover ,.menu-serviços-yamaha:hover{
+  color: rgb(1, 53, 166);
+}
+.ul-menu{
+  text-align: center;
+  color: #181818;
+}
+.li-menu{
+  margin-bottom: 10px;
+}
+#Serviço{
+  display: none;
+}
+#Main{
+ display: none;
+}
+#serviços{
+  padding-bottom: 20px;
+  position: absolute;
+  width: 100%;
+  background: white;
+}
+#yamaha{
+  padding-bottom: 20px;
+  position: absolute;
+  width: 100%;
+  background: white;
+}
+#Shop{
+  display: none;
+}
 .menu-icon{
   height: 30px;
   width: 30px;
   padding-right: 22px;
+}
+.menu-serviços{
+  width: 30%;
+  margin: auto;
+}
+.menu-serviços-yamaha{
+  width: 60%;
+  margin: auto;
 }
 
 .motos{
@@ -88,3 +165,348 @@
   margin-left: 10px;
 }
 
+.banner{
+  text-align: center;
+  margin-top: 40px;
+}
+
+.banner-title{
+  color: rgb(43, 43, 43);
+  margin-top: 70px;
+  font-size: xx-large;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.banner-comments{
+  font-size: large;
+  margin-top: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.menu-moto{
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+.img-card-moto{
+  width: 100%;
+}
+.type-moto{
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(89, 89, 89);
+  font-weight: 700;
+  padding-left: 30px;
+}
+.name-moto{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  padding-left: 30px;
+  color: rgb(33, 33, 33);
+}
+
+.banners{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 150px;
+}
+.first-page{
+  text-align: center;
+}
+
+.banner-moto{
+  width: 50%;
+  height: 550px;
+}
+.section-serviços{
+  display: flex;
+  width: 70%;
+  overflow: hidden;
+  margin: auto;
+  
+  margin-top: 40px;
+}
+.img-serviço{
+  width: 90%;
+  height: 400px;
+}
+.text-serviços-title{
+  position: relative;
+  top: -340px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-large;
+  color: white;
+}
+.text-serviços-comments{
+  position: relative;
+  top: -360px;
+  color: rgb(240, 240, 240);
+  margin: 70px;
+  text-align: start;
+  font-size: large;
+
+}
+.banner-card-1{
+  background-image: url('./Img//banner1.avif');
+  height: 500px;
+}
+.banner-card-2{
+  margin-top: 30px;
+  background-image: url('./Img//banner2.avif');
+  height: 500px;
+}
+.card-serviços{
+  height: 500px;
+}
+.banner-text-compra{
+  color: white;
+  padding-top: 200px;
+  text-align: start;
+  padding-left: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: xx-large;
+}
+.banner-text-comments{
+  color: azure;
+  text-align: start;
+  padding-left: 100px;
+}
+.banner-japones{
+  margin: 50px;
+}
+.logo-japones{
+  margin-bottom: 50px;
+}
+.text-japones{
+  width: 650px;
+  color: rgb(70, 70, 70);
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.footer{
+  border-top:solid 5px rgb(1, 53, 166);
+  background-color: #181818;
+  padding: 50px;
+  text-align: center;
+}
+.logo-yamaha{
+  color: aliceblue;
+  font-size: large;
+  font-weight: 700;
+}
+.social-icons{
+  margin-top: 50px;
+  color: aliceblue;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  
+}
+.socias-icons{
+  width: 100%;
+  height: 26px;
+  
+}
+.page-link{
+  width: 90%;
+  margin: auto;
+}
+ul{
+  margin-top: 50px;
+  color: #939598;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0%;
+}
+.link-small{
+  width: 500px;
+  margin: auto;
+  margin-top: 50px;
+}
+.line{
+  background: #939598;
+  height: 1px;
+}
+.sub-title{
+  
+  color: #939598;
+  margin: 100px;
+  margin-bottom: 20px;
+}
+.shop{
+  margin-top: 100px;
+}
+.shop-pc{
+  padding: 0px 300px ;
+}
+.title-shop{
+  overflow: hidden;
+  margin-top: 20px;
+  color: rgb(0, 26, 255);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.line-card{
+  display: flex;
+  margin-top: 100px;
+  justify-content: space-between;
+}
+.card-shop{
+  padding: 20px;
+  text-align: center;
+}
+.card-shop:hover{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.descrição-iten-shop{
+  font-weight: 700;
+  text-align: center;
+}
+.shop-value{
+  color: rgb(2, 7, 146);
+  font-size: 30px;
+}
+.text-atençao{
+  width: 80%;
+  margin: auto;
+  font-size: 14px;
+  margin-top: 80px;
+}
+.text-atençao-description{
+  width: 80%;
+  margin: auto;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.banner-serviço{
+  margin-top: 100px;
+  
+}
+.sinops-banner{
+  display: flex;
+  text-align: center;
+  background: #e9e9e9;
+  padding: 50px;
+}
+.text-title-serviço{
+  font-size: 30px;
+  width: 100px;
+  margin: auto;
+  text-align: end;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.text-title-serviços-coments{
+  padding-left: 40px;
+  width: 600px;
+  margin: auto;
+  text-align: start;
+}
+.banner-card-serviçe{
+  display: flex;
+  width: 60%;
+  margin: auto;
+  justify-content: space-between;
+  margin-top: 50px;
+
+}
+.card-serviçe{
+  padding: 10px;
+  text-align: center;
+  border: solid 1px rgb(249, 249, 249);
+}
+.card-serviçe:hover{
+  border: solid 1px rgb(4, 6, 122);
+}
+.card-img-serviçe{
+  width: 350px;
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+}
+.text-card-serviçe{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  padding-left: 20px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+.text-card-coments-serviçe{
+  font-size: 14px;
+  padding: 20px;
+}
+.banner-revisao-serviçe{
+  display: flex;
+  width: 60%;
+  margin: auto;  
+  margin-top: 150px;
+}
+.img-revisao{
+  margin-top: 100px;
+}
+.text-comments-revisao{
+  padding: 40px;
+  width: 50%;
+  padding-left: 0px;
+  padding-right: 80px;
+  font-size: 14px;
+}
+.banner-img-resisão{
+  width: 700px;
+}
+.line-revisao{
+  height: 1px;
+  width: 60%;
+  margin: auto;
+  margin-top: 50px;
+  background: blue;
+}
+.text-agenda-revisao{
+  color: blue;
+  font-size: 25px;
+  margin-top: 50px;
+  text-align: center;
+}
+.banner-qr-code{
+  display: flex;
+  width: 30%;
+  margin: auto;margin-top: 50px;
+  
+}
+.img-code{
+  height: 180px;
+  margin: auto;
+}
+.text-code{
+  margin: auto;
+  width: 200px;
+  padding-left: 10px;
+}
+.app-banner{
+  display: flex;
+}
+.app-img{
+  margin-top: 70px;
+  width: 100px;
+}
+.r3abs{
+  background-image: url('./Img/r3.avif');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+.text-r3{
+  color: white;
+  padding-top: 760px;
+  font-size: 50px;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+.text-descriçao-r3{
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
