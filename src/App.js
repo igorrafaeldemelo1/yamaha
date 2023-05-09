@@ -35,7 +35,7 @@ import qr from './Img/qrcode.png'
 import app1 from './Img/appaple.avif'
 import app2 from './Img/googleplay.avif'
 import r3 from './Img/r3.avif'
-import r3abs from './Img/r3abbs.avif'
+import r3abs from './Img/bannerr3.png'
 import r3abs1 from './Img/r31.avif'
 
 function openMenuMoto() {
