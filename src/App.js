@@ -34,9 +34,16 @@ import revisaopreco from './Img/revisaopreco.avif'
 import qr from './Img/qrcode.png'
 import app1 from './Img/appaple.avif'
 import app2 from './Img/googleplay.avif'
-import r3 from './Img/r3.avif'
+import r3 from './Img/r3abs.avif'
 import r3abs from './Img/bannerr3.png'
 import r3abs1 from './Img/r31.avif'
+import tec1 from './Img/tec1.avif'
+import tec2 from './Img/tec2.avif'
+import tec3 from './Img/tec3.avif'
+import r3roxa from './Img/r3roxa.png'
+import r3azul from './Img/r3azul.png'
+import r3black from './Img/r3black.avif'
+
 
 function openMenuMoto() {
   closeall()
@@ -108,6 +115,15 @@ function openMenuYamahaClick() {
   const bar2 = document.getElementById('Shop')
   bar2.style.display = "none"
   window.scrollY = "0px"
+}
+
+function colorMoto1() {
+  var img = document.getElementById("img-moto-cor");
+  img.src = r3roxa
+}
+function colorMoto2() {
+  var img = document.getElementById("img-moto-cor");
+  img.src = r3azul
 }
 
 const MenuBar = () =>
@@ -460,39 +476,120 @@ const R3ABS = () =>
       <div className='text-r3'>R3 ABS</div>
       <div className='text-descriçao-r3'>A MOTO SUPERSPORT PARA TODOS OS DIAS</div>
     </div>
-    <div className='flex'>
+    <div className='flex banner-r3 '>
       <div className='banner-text-performace'>
         <div className='banner-perfomace'>PERFORMANCE</div>
+        <div className='motor-bi'>MOTOR BICILÍNDRICO</div>
         <div className='banner-coments-performace'>A performance esportiva que você sempre buscou. Com 321 cc, desenvolve 42 cv e 3,0 kgf.m de torque. Conta com a exclusiva tecnologia DiASil que contribui para menor vibração, melhor dissipação de calor e ganho de performance.</div>
       </div>
-      <div>
-        <video></video>
-      </div>
+      <iframe width="1090" height="500" src="https://www.youtube.com/embed/yaNEa4YRkIg?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
-    <img src={r3abs}></img>
+    <img className='img-banner-tecnology' src={r3abs}></img>
     <div className='flex'>
       <div className='box-tecnology-1'>
-        <div className='text-tecnology'>TECNOLOGIA</div>
+        <div className='text-tecnology'>"TECNOLOGIA</div>
         <div className='text-comments-tecnology'>PAINEL 100% DIGITAL COM SHIFT LIGHT</div>
       </div>
       <div className='box-tecnology-2'>
         Projetado para auxiliar sua performance, o painel da R3 é o único da categoria que possui a luz indicativa Shift Light personalizável, que indica o melhor momento para a troca de marchas.
       </div>
     </div>
+    <div className='flex img-banner-tec'>
+      <img className='img-tec' src={tec1}></img>
+      <img className='img-tec' src={tec2}></img>
+      <img className='img-tec' src={tec3}></img>
+    </div>
     <div className='flex'>
-      <img></img>
-      <img></img>
-      <img></img>
+      <div className='box-tecnology-1'>
+        <div className='text-tecnology'> "CONFORTO</div>
+        <div className='text-comments-tecnology'>PILOTE TODOS OS DIAS</div>
+      </div>
+      <div className='box-tecnology-2'>
+        Sua posição de pilotagem esportiva é complementada pela nova suspensão dianteira invertida e amortecedor traseiro, com 7 regulagens na pré-carga da mola, proporcionando equilíbrio perfeito entre performance, agilidade e conforto.
+      </div>
     </div>
-    <div className='box-tecnology-1'>
-      <div className='text-tecnology'>TECNOLOGIA</div>
-      <div className='text-comments-tecnology'>PAINEL 100% DIGITAL COM SHIFT LIGHT</div>
+    <img className='img-banner-tecnology' src={r3abs1}></img>
+    <div className='flex'>
+      <div className='box-tecnology-1'>
+        <div className='text-tecnology'> "DESIGN</div>
+        <div className='text-comments-tecnology'>AERODINÂMICA SUPERESPORTIVA</div>
+      </div>
+      <div className='box-tecnology-2'>
+        Seu visual traz o DNA da R series Yamaha. O novo para-brisa, entrada de ar frontal e carenagens laterais reduziram a resistência e turbulência do vento, fazendo a Nova R3 atingir até 8km/h a mais de velocidade final que o modelo anterior.
+      </div>
+    </div  >
+    <div className='frame'>
+      <iframe width="1060" height="615" src="https://www.youtube.com/embed/NABIP1_uwFU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
-    <div className='box-tecnology-2'>
-      Projetado para auxiliar sua performance, o painel da R3 é o único da categoria que possui a luz indicativa Shift Light personalizável, que indica o melhor momento para a troca de marchas.
+    <div className='flex'>
+      <img className='img-premiaçao' src={r3}></img>
+      <div className='banner-text-performace banner-text-performace-2 '>
+        <div className='banner-perfomace'>RECONHECIMENTO</div>
+        <div className='motor-bi'>PREMIAÇÕES</div>
+        <div className='banner-coments-performace'>A R3 foi eleita pela quarta vez como a Melhor Esportiva de 250 a 500 cc do Brasil na premiação, concedida em 2022 pela Revista MotoPremium. A opinião de consumidores e jornalistas especializados se somam para definir os ganhadores de cada categoria.</div>
+      </div>
     </div>
-    <img src={r3abs1}></img>
-
+    <div className='moto-color flex'>
+      <div className='select-moto'>
+        <div className='title-select'>OLHE MAIS DE PERTO
+        </div>
+        <div className='coments-select'>Escolha a versão que mais combina com você.
+        </div>
+        <div className='btn-cor roxo' onClick={colorMoto1}></div>
+        <div className='mots'><span>PHANTON PURPLE</span><br />
+          Roxo Metálico</div>
+        <div className='btn-cor azul' onClick={colorMoto2}></div>
+        <div className='mots'><span>RACING BLUE</span><br /> Azul Metálico</div>
+      </div>
+      <img id='img-moto-cor' src={r3roxa} ></img>
+    </div>
+    <img className='r3-sale' src={r3black}></img>
+    <div className='r3-sale-text'>
+      <div className='text-sale-1'>R3 ABS</div>
+      <div className='line-sales'></div>
+      <div className='flex'>
+        <div>
+          <div className='text-sale-2'>A PARTIR DE</div>
+          <div className='text-sale-2'>R$</div>
+        </div>
+        <div className='text-sale-3'>32.890,00</div>
+      </div>
+      <div className='line-sales'></div>
+      <div className='text-sale-4'>FRETE DE ACORDO COM A REGIÃO</div>
+    </div>
+    <div className='r3-seles'></div>
+    <div className='tabela-financiamento'>
+      <div className='financia'>FINANCIAMENTO</div>
+      <div className='flex tabela-1'>
+        <div className='text-finan-1'>ENTRADA</div>
+        <div className='text-finan-2'>R$  10.241, 00</div>
+        <div className='barra-tabela'></div>
+        <div className='text-finan-1'>SALDO</div>
+        <div className='text-finan-2'>12x de</div>
+        <div className='text-finan-2'>R$  2.071, 00</div>
+        <div className='barra-tabela'></div>
+        <div className='text-finan-1'>TAXA</div>
+        <div className='text-finan-2'>ZERO</div>
+      </div>
+      <div className='line-tabela'></div>
+      <div className='flex tabela-1'>
+        <div className='text-finan-1'>ENTRADA</div>
+        <div className='text-finan-2'>R$  10.241, 00</div>
+        <div className='barra-tabela'></div>
+        <div className='text-finan-1'>SALDO</div>
+        <div className='text-finan-2'>36x de</div>
+        <div className='text-finan-2'>R$  824, 00</div>
+        <div className='barra-tabela'></div>
+        <div className='text-finan-1'>TAXA</div>
+        <div className='text-finan-2'>0,99% a.m.</div>
+      </div>
+      <div className='simule-financiamento'>SIMULE O SEU FINANCIAMENTO</div>
+    </div>
+    <div className='text-modelo'>
+      "Modelo YZF-R3 modelo 2024. Preço Público Sugerido: R$ 32.890,00 à vista, sem frete. Preço de Venda R$ 34.135,00 à vista (base ICMS 12%) com frete incluso no valor de R$ 1.245,00, ou financiamento na modalidade de CDC em 12 meses: Entrada de R$ 10.241,00 (30%) e parcelas mensais fixas e sucessivas de R$ 2.071,00. Taxa de juros de 0% a.m. e 0% a.a. Custo efetivo total (CET). Ou em 36 meses: Entrada de R$ 10.241,00 (30%) e parcelas mensais fixas e sucessivas de R$ 824,00. Taxa de juros de 0,99% a.m. e 13% a.a. Custo efetivo total (CET) 15,65% a.a., IOF no valor de R$ 94,08. Valor total a ser financiado R$ 24.851,08 e valor final total (com encargos de financiamento) de R$ 39.905,00. Para o cálculo da CET foi considerada a tarifa de cadastro de R$ 600,00, valor de IOF informado em cada condição e valor médio de registro de contrato de R$ 263,00. O valor da taxa de registro de contrato praticado em cada Estado altera o valor da parcela de financiamento divulgada. Confira o valor da taxa de registro de contrato vigente e ICMS no Estado de emplacamento da motocicleta no ato da compra. Em caso de inadimplência, é permitida a cobrança de: Multa moratória de 2% mais juro de mora de 1% + taxa de juros remuneratórios pactuados no contrato ao mês (resolução 4558 do Banco Central). Conforme Art.52, § 2º da Lei Fed. 8.078/90, do Código de Defesa do Consumidor fica assegurado ao consumidor à liquidação antecipada do débito total ou parcialmente, mediante redução proporcional dos juros e demais acréscimos. As Condições gerais da Cédula de Crédito Bancário Operações de Financiamento de Bens está disponível no site do Banco Yamaha. Carência de 30 dias para pagamento da primeira parcela de financiamento. Condições válidas exclusivamente para financiamentos realizados pelo Banco Yamaha Motor do Brasil S.A. (https://www.yamahaservicosfinanceiros.com.br/banco.De 01/05/2023 a 31/05/2023, limitados a 50 unidades de cada modelo (independente do plano de financiamento). Crédito sujeito à aprovação. Apenas nas concessionárias participantes. As motocicletas Yamaha estão em conformidade com o los e Veículos Similares). BANCO YAMAHA MOTOR DO BRASIL S.A. Rod. Pres. Dutra, Km 214 - Guarulhos - SP - Brasil – CEP 07178-580 -SAC Produtos: (11) 2431-6500 - sac@yamaha-motor.com.br. Central de Relacionamento com o Cliente Banco: (11) 2088-7700 – SAC Banco: 0800-774-8283 - sac.banco@yamaha-motor.com.br. SAC - Atendimento ao Deficiente Auditivo ou de Fala: 0800-774-1415. Ouvidoria: 0800-774-9000 - ouvidoria@yamaha-motor.com.br. NO TRÂNSITO, SUA RESPONSABILIDADE SALVA VIDAS "
+    </div>
+    <div className='text-atençao m-0'>AVISO DE FRAUDE</div>
+    <div className='text-atençao-description'>A Yamaha informa que os seus produtos são comercializados por meio das concessionárias autorizadas da marca e/ou através do seu e-commerce oficial, não sendo realizadas vendas para o consumidor final por telefone, funcionários ou quaisquer outros tipos de parceiros e/ou representantes comerciais, bem como outros sites da internet.</div>
 
   </section>
 
